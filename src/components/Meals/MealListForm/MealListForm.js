@@ -1,7 +1,7 @@
-import React, { useState, useContext } from 'react';
-import Button from '../../UI/Button/Button';
-import classes from './MealListForm.module.css';
-import CartContext from '../../../store/cart-context';
+import React, { useState, useContext } from "react";
+import Button from "../../UI/Button/Button";
+import classes from "./MealListForm.module.css";
+import CartContext from "../../../store/cart-context";
 
 const MealListForm = (props) => {
   const [itemQty, setItemQty] = useState(1);
@@ -14,11 +14,8 @@ const MealListForm = (props) => {
 
   const addItemToCart = (event) => {
     event.preventDefault();
-
     let quantity = Number(event.target.meal_count.value);
-
     cartCtx.addItem({ ...props.item, quantity: quantity });
-
     setItemQty(1);
   };
 
@@ -32,7 +29,7 @@ const MealListForm = (props) => {
         value={itemQty}
         onChange={itemQtyHandler}
       />
-      <Button name="+ Add" type="submit" />
+      <Button name="Add" type="submit" />
     </form>
   );
 };

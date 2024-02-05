@@ -7,7 +7,7 @@ const Navbar = (props) => {
   return (
     <>
       <header className="header">
-        <h2>ReactMeals</h2>
+        <h2>React Meals</h2>
         <NavbarCart onClick={props.onShowCart} />
       </header>
     </>

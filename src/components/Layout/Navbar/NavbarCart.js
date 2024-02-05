@@ -1,7 +1,7 @@
-import React, { useContext } from 'react';
-import CartContext from '../../../store/cart-context';
+import React, { useContext } from "react";
+import CartContext from "../../../store/cart-context";
 
-import './NavbarCart.css';
+import "./NavbarCart.css";
 const NavbarCart = (props) => {
   const cartCtx = useContext(CartContext);
 
